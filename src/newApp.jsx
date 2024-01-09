@@ -65,7 +65,7 @@ function ResponsiveDrawer(props) {
   };
 
   const drawer = (
-    <div className="h-screen flex flex-col justify-between bg-[#1E2640]">
+    <div className="h-screen flex flex-col justify-between bg-[#1E2640] px-[10px]">
       <div>
         <Toolbar className="h-[64px] p-4 flex flex-row items-center">
           <div className="flex flex-row  w-full  items-center gap-3">
@@ -93,7 +93,7 @@ function ResponsiveDrawer(props) {
             <ListItem
               key={image.name}
               disablePadding
-              className={`flex flex-row items-center gap-3 rounded px-[24px] py-1 font-grot text-slate-300	 capitalize hover:bg-white hover:bg-opacity-10 transition ease-in-out cursor-pointer ${
+              className={`flex flex-row items-center gap-3 rounded py-1 px-[14px] font-grot text-slate-300	 capitalize hover:bg-white hover:bg-opacity-10 transition ease-in-out cursor-pointer ${
                 image.name === "payouts" &&
                 "bg-white bg-opacity-10 font-semibold text-white"
               }`}
